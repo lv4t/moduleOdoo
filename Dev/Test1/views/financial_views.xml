@@ -1,0 +1,50 @@
+<!-- views/financial_views.xml -->
+<odoo>
+
+        <!-- Action -->
+        <record id="action_financial_tree" model="ir.actions.act_window">
+            <field name="name">Financial Records</field>
+            <field name="res_model">agri.export.financial</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help">Manage financial records</field>
+        </record>
+
+        <record id="action_financial_form" model="ir.actions.act_window">
+            <field name="name">Financial Record Form</field>
+            <field name="res_model">agri.export.financial</field>
+            <field name="view_mode">form</field>
+            <field name="help">Manage financial record details</field>
+        </record>
+
+        <!-- Views -->
+        <record id="view_financial_tree" model="ir.ui.view">
+            <field name="name">agri.export.financial.tree</field>
+            <field name="model">agri.export.financial</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="document_date"/>
+                    <field name="amount"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_financial_form" model="ir.ui.view">
+            <field name="name">agri.export.financial.form</field>
+            <field name="model">agri.export.financial</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="document_date"/>
+                            <field name="amount"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+</odoo>

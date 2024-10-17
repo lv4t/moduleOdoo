@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem id="menu_retail_management" name="Retail Management"/>
+
+    <menuitem id="menu_retail_warehouse" name="Warehouse" parent="menu_retail_management" action="action_warehouse"/>
+    <menuitem id="menu_retail_sale" name="Sales" parent="menu_retail_management" action="action_sale_order"/>
+    <menuitem id="menu_retail_customer" name="Customers" parent="menu_retail_management" action="action_customer"/>
+    <menuitem id="menu_retail_employee" name="Employees" parent="menu_retail_management" action="action_employee"/>
+    <menuitem id="menu_retail_branch" name="Branches" parent="menu_retail_management" action="action_branch"/>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="menu_chung" name="Quản lý chung"/>
+      <!-- Menu item for Budget -->
+    <menuitem id="menu_budget" name="Ngân sách" action="action_budget" parent="menu_chung"/>
+    <menuitem id="menu_employee" name="Nhân viên" action="action_employee" parent="menu_chung"/>
+    <menuitem id="menu_export_revenue" name="Doanh thu xuất khẩu" action="action_export_revenue" parent="menu_chung"/>
+    <menuitem id="menu_retail_revenue" name="Doanh thu bán lẻ" action="action_retail_revenue" parent="menu_chung"/>
+</odoo>

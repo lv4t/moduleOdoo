@@ -1,0 +1,25 @@
+<odoo>
+    <menuitem id="menu_export" name="Xuất Khẩu Nông Sản" sequence="1"/>
+
+    <menuitem id="menu_export_warehouse" name="Kho" parent="menu_export" sequence="1"/>
+    <menuitem id="menu_export_order" name="Đơn hàng" parent="menu_export" sequence="2"/>
+    <menuitem id="menu_export_customer" name="Khách hàng" parent="menu_export" sequence="3"/>
+    <menuitem id="menu_export_employee" name="Nhân viên" parent="menu_export" sequence="4"/>
+    <menuitem id="menu_export_financial" name="Tài chính"
+                  parent="menu_export" sequence="5"/>
+    <menuitem id="menu_export_warehouse_items" name=" Kho" parent="menu_export_warehouse" action="action_warehouse"/>
+    <menuitem id="menu_export_order_items" name="Đơn hàng" parent="menu_export_order" action="action_order"/>
+    <menuitem id="menu_export_customer_items" name="Khách hàng" parent="menu_export_customer" action="action_customer"/>
+    <menuitem id="menu_export_employee_items" name="Nhân viên" parent="menu_export_employee" action="action_employee"/>
+    <menuitem id="menu_export_financial_items" name="Tài chính"
+                  parent="menu_export_financial" action="action_export_financial"/>
+    <menuitem id="menu_export_attendance_items" name="Điểm danh"
+                  parent="menu_export_employee" action="action_attendance"/>
+     <menuitem id="menu_monthly_financial_report" name="Báo cáo doanh thu hàng tháng"
+                  parent="menu_export_financial" action="action_monthly_financial_report"/>
+
+    <menuitem id="menu_product_monthly_sales_summary"
+              name="Tổng Kết Doanh Thu Theo Tháng"
+              parent="menu_export_financial"
+              action="action_product_monthly_sales_summary"/>
+</odoo>

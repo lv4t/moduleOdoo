@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_sale_order_tree" model="ir.ui.view">
+        <field name="name">retail.sale.order.tree</field>
+        <field name="model">retail.sale.order</field>
+        <field name="arch" type="xml">
+            <tree string="Sale Orders">
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="date_order"/>
+                <field name="total_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_sale_order_form" model="ir.ui.view">
+        <field name="name">retail.sale.order.form</field>
+        <field name="model">retail.sale.order</field>
+        <field name="arch" type="xml">
+            <form string="Sale Order">
+                <group>
+                    <field name="name"/>
+                    <field name="customer_id"/>
+                    <field name="date_order"/>
+                    <field name="total_amount"/>
+                </group>
+                <group>
+                    <field name="order_line"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_order" model="ir.actions.act_window">
+        <field name="name">Sale Orders</field>
+        <field name="res_model">retail.sale.order</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

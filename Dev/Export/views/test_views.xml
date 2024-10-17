@@ -1,0 +1,60 @@
+<odoo>
+    <!-- Tree View -->
+    <record id="view_product_monthly_sales_summary_tree" model="ir.ui.view">
+        <field name="name">product.monthly.sales.summary.tree</field>
+        <field name="model">product.monthly.sales.summary</field>
+        <field name="arch" type="xml">
+            <tree string="Tổng Kết Doanh Thu Theo Tháng">
+                <field name="product_id"/>
+                <field name="month"/>
+                <field name="year"/>
+                <field name="total_quantity"/>
+                <field name="total_revenue"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_product_monthly_sales_summary_form" model="ir.ui.view">
+        <field name="name">product.monthly.sales.summary.form</field>
+        <field name="model">product.monthly.sales.summary</field>
+        <field name="arch" type="xml">
+            <form string="Tổng Kết Doanh Thu Theo Tháng">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="month"/>
+                        <field name="year"/>
+                        <field name="total_quantity"/>
+                        <field name="total_revenue"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Graph View -->
+    <record id="view_product_monthly_sales_summary_graph" model="ir.ui.view">
+        <field name="name">product.monthly.sales.summary.graph</field>
+        <field name="model">product.monthly.sales.summary</field>
+        <field name="arch" type="xml">
+            <graph string="Doanh Thu Theo Tháng" type="bar">
+                <field name="month"/>
+                <field name="total_revenue" type="measure"/>
+                <field name="product_id"/>
+                <field name="year"/>
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="action_product_monthly_sales_summary" model="ir.actions.act_window">
+        <field name="name">Tổng Kết Doanh Thu Theo Tháng</field>
+        <field name="res_model">product.monthly.sales.summary</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="view_id" ref="view_product_monthly_sales_summary_tree"/>
+        <field name="context">{}</field>
+    </record>
+
+
+</odoo>

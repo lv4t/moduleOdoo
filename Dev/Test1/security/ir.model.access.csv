@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_agri_export_inventory,access_agri_export_inventory,model_agri_export_inventory,,1,1,1,1
+access_agri_export_order,access_agri_export_order,model_agri_export_order,,1,1,1,1
+access_agri_export_customer,access_agri_export_customer,model_agri_export_customer,,1,1,1,1
+access_agri_supplier,access_agri_supplier,model_agri_export_supplier,,1,1,1,1
+access_agri_shipping,access_agri_shipping,model_agri_export_shipping,,1,1,1,1
+access_agri_quality,access_agri_quality,model_agri_export_quality,,1,1,1,1
+access_agri_financial,access_agri_financial,model_agri_export_financial,,1,1,1,1
+access_agri_employee,access_agri_employee,model_agri_export_employee,,1,1,1,1

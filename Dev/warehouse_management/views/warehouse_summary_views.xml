@@ -1,0 +1,44 @@
+<odoo>
+    <!-- Define action for the Warehouse Summary -->
+    <record id="action_warehouse_summary" model="ir.actions.act_window">
+        <field name="name">Warehouse Summary</field>
+        <field name="res_model">warehouse.summary</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Define tree view for Warehouse Summary -->
+    <record id="view_warehouse_summary_tree" model="ir.ui.view">
+        <field name="name">warehouse.summary.tree</field>
+        <field name="model">warehouse.summary</field>
+        <field name="arch" type="xml">
+            <tree string="Warehouse Summary">
+                <field name="name"/>
+                <field name="total_pepper"/>
+                <field name="total_cashew"/>
+                <field name="total_coffee"/>
+                <field name="total_stock_quantity"/>
+                <field name="total_stock_weight"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Define form view for Warehouse Summary -->
+    <record id="view_warehouse_summary_form" model="ir.ui.view">
+        <field name="name">warehouse.summary.form</field>
+        <field name="model">warehouse.summary</field>
+        <field name="arch" type="xml">
+            <form string="Warehouse Summary">
+                <sheet>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="total_pepper" readonly="1"/>
+                        <field name="total_cashew" readonly="1"/>
+                        <field name="total_coffee" readonly="1"/>
+                        <field name="total_stock_quantity" readonly="1" />
+                        <field name="total_stock_weight" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

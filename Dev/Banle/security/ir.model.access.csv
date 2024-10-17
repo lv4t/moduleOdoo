@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_retail_warehouse,access_retail_warehouse,model_retail_warehouse,,1,1,1,1
+access_transaction,access.retail.transaction,model_retail_transaction,,1,1,1,1
+access_sale_order,access_sale_order,model_retail_sale_order,,1,1,1,1
+access_sale_order_line,access_sale_order_line,model_retail_sale_order_line,,1,1,1,1
+access_customer,access_customer,model_retail_customer,,1,1,1,1
+access_employee,access_employee,model_retail_employee,,1,1,1,1
+access_retail_employee,access_retail_employee,model_retail_employee,base.group_user,1,1,1,1
+access_retail_attendance,access_retail_attendance,model_retail_attendance,base.group_user,1,1,1,1
+access_monthly_retail_report,access_monthly_retail_report,model_monthly_retail_report,base.group_user,1,1,1,1
+access_monthly_retail_report_line,access_monthly_retail_report_line,model_monthly_retail_report_line,base.group_user,1,1,1,1
+access_retail_personalinfo,access_retail_personalinfo,model_retail_personalinfo,base.group_user,1,1,1,1
+access_monthly_revenue_summary,access_monthly_revenue_summary,model_monthly_revenue_summary,base.group_user,1,1,1,1
+access_branch,access_branch,model_retail_branch,,1,1,1,1

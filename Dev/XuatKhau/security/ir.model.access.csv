@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_export_order,access_export_order,model_export_order,,1,1,1,1
+access_export_order_line,access_export_order_line,model_export_order_line,,1,1,1,1
+access_export_customer,access_export_customer,model_export_customer,base.group_user,1,1,1,1
+access_export_employee,access_export_employee,model_export_employee,base.group_user,1,1,1,1
+access_export_warehouse,access_export_warehouse,model_export_warehouse,base.group_user,1,1,1,1

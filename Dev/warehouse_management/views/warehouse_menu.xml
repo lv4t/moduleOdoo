@@ -1,0 +1,11 @@
+<odoo>
+    <!-- Top-level menu item for Warehouse Management -->
+    <menuitem id="menu_warehouse_management" name="Warehouse Management" sequence="10"/>
+
+    <!-- Sub-menu items -->
+    <menuitem id="menu_pepper" name="Pepper" parent="menu_warehouse_management" action="action_pepper"/>
+    <menuitem id="menu_cashew" name="Cashew" parent="menu_warehouse_management" action="action_cashew"/>
+    <menuitem id="menu_coffee" name="Coffee" parent="menu_warehouse_management" action="action_coffee"/>
+    <menuitem id="menu_warehouse_summary" name="Warehouse Summary" parent="menu_warehouse_management"
+              action="action_warehouse_summary"/>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pepper_user,access.pepper.user,model_warehouse_pepper,,1,1,1,1
+access_cashew_user,access.cashew.user,model_warehouse_cashew,,1,1,1,1
+access_coffee_user,access.coffee.user,model_warehouse_coffee,,1,1,1,1
+access_warehouse_summary_user,access.warehouse.summary.user,model_warehouse_summary,,1,0,0,0

@@ -1,0 +1,35 @@
+<odoo>
+    <record id="view_customer_tree" model="ir.ui.view">
+        <field name="name">retail.customer.tree</field>
+        <field name="model">retail.customer</field>
+        <field name="arch" type="xml">
+            <tree string="Customers">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_customer_form" model="ir.ui.view">
+        <field name="name">retail.customer.form</field>
+        <field name="model">retail.customer</field>
+        <field name="arch" type="xml">
+            <form string="Customer">
+                <group>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <field name="address"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_customer" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="res_model">retail.customer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

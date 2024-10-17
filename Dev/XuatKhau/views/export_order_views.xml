@@ -1,0 +1,58 @@
+<!-- views/export_order_views.xml -->
+<odoo>
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">order.form</field>
+        <field name="model">export.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="employee_id"/>
+                        <field name="order_date"/>
+                        <field name="shipping_method"/>
+                        <field name="state"/>
+                    </group>
+                    <notebook>
+                        <page string="Order Lines">
+                            <field name="order_line">
+                                <tree editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                    <field name="price_total"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_order_tree" model="ir.ui.view">
+        <field name="name">order.tree</field>
+        <field name="model">export.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="employee_id"/>
+                <field name="order_date"/>
+                <field name="shipping_method"/>
+                <field name="state"/>
+                <field name="total_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_export_order" model="ir.actions.act_window">
+        <field name="name">Đơn hàng xuất khẩu</field>
+        <field name="res_model">export.order</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Tạo đơn hàng xuất khẩu mới</p>
+        </field>
+    </record>
+</odoo>

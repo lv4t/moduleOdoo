@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_export_warehouse,access_export_warehouse,model_export_warehouse,,1,1,1,1
+access_export_order,access_export_order,model_export_order,,1,1,1,1
+access_export_order_line,access_export_order_line,model_export_order_line,,1,1,1,1
+access_export_customer,access_export_customer,model_export_customer,,1,1,1,1
+access_export_employee,access_export_employee,model_export_employee,,1,1,1,1
+access_export_attendance,access_export_attendance,model_export_attendance,,1,1,1,1
+access_export_financial,access_export_financial,model_export_financial,,1,1,1,1
+access_monthly_financial_report,access_monthly_financial_report,model_monthly_financial_report,,1,1,1,1
+access_export_personalinfo,access_export_personalinfo,model_export_personalinfo,,1,1,1,1
+access_product_monthly_sales_summary,access_product_monthly_sales_summary,model_product_monthly_sales_summary,,1,1,1,1

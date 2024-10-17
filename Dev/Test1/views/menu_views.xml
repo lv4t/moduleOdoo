@@ -1,0 +1,16 @@
+<!-- views/menu_views.xml -->
+<odoo>
+    <!-- Top-level menu for Agricultural Export -->
+    <menuitem id="menu_agri_export_root" name="Xuất khẩu" sequence="1"/>
+    <!-- Các menuitem con tương ứng -->
+    <menuitem id="menu_inventory_management" name="Quản lý kho" parent="menu_agri_export_root" action="action_inventory"/>
+    <menuitem id="menu_export_order" name="Quản lý đơn hàng" parent="menu_agri_export_root" action="action_export_order_tree"/>
+    <menuitem id="menu_export_customer" name="Khách hàng" parent="menu_agri_export_root" action="action_export_customer_tree"/>
+    <menuitem id="menu_supplier" name="Nhà cung ứng" parent="menu_agri_export_root" action="action_supplier_tree"/>
+    <menuitem id="menu_shipping" name="Vận chuyển" parent="menu_agri_export_root" action="action_shipping_tree"/>
+    <menuitem id="menu_quality" name="Chất lượng hàng hóa" parent="menu_agri_export_root" action="action_quality_check_tree"/>
+    <menuitem id="menu_financial" name="Tài chính" parent="menu_agri_export_root" action="action_financial_tree"/>
+    <menuitem id="menu_hr" name="Nhân sự" parent="menu_agri_export_root" action="action_employee_tree"/>
+</odoo>
+
+

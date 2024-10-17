@@ -1,0 +1,11 @@
+<odoo>
+    <menuitem id="menu_retail_management" name="Bán lẻ" sequence="1"/>
+    <menuitem id="menu_warehouse" name="Kho hàng" parent="menu_retail_management" action="action_warehouse"/>
+    <menuitem id="menu_sale_order" name="Bán hàng" parent="menu_retail_management" action="action_sale_order"/>
+    <menuitem id="menu_customer" name="Khách hàng" parent="menu_retail_management" action="action_customer"/>
+    <menuitem id="menu_employee" name="Nhân viên" parent="menu_retail_management" action="action_employee"/>
+    <menuitem id="menu_attendance" name="Điểm danh" parent="menu_retail_management" action="action_attendance"/>
+    <menuitem id="menu_branch" name="Địa chỉ cửa hàng" parent="menu_retail_management" action="action_branch"/>
+    <menuitem id="menu_transaction" name="Thu-Chi" parent="menu_retail_management" action="action_retail_transaction"/>
+    <menuitem id="menu_monthly_retail_report" name="Monthly Retail Report" parent="menu_retail_management" action="action_monthly_retail_report"/>
+</odoo>

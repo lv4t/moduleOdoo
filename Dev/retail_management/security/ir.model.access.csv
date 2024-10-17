@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_warehouse,access_warehouse,model_retail_warehouse,,1,1,1,1
+access_sale_order,access_sale_order,model_retail_sale_order,,1,1,1,1
+access_sale_order_line,access_sale_order_line,model_retail_sale_order_line,,1,1,1,1
+access_customer,access_customer,model_retail_customer,,1,1,1,1
+access_employee,access_employee,model_retail_employee,,1,1,1,1
+access_branch,access_branch,model_retail_branch,,1,1,1,1

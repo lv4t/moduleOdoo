@@ -1,0 +1,53 @@
+<odoo>
+        <!-- Form view for Monthly Financial Report -->
+        <record id="view_monthly_financial_report_form" model="ir.ui.view">
+            <field name="name">monthly.financial.report.form</field>
+            <field name="model">monthly.financial.report</field>
+            <field name="arch" type="xml">
+                <form string="Báo cáo tài chính hàng tháng">
+                    <group>
+                        <field name="month"/>
+                        <field name="year"/>
+                        <field name="exchange_rate"/>
+                    </group>
+                    <group>
+                        <field name="total_income_usd"/>
+                        <field name="total_cost_usd"/>
+                        <field name="total_profit_usd"/>
+                    </group>
+                    <group>
+                        <field name="total_income_vnd"/>
+                        <field name="total_cost_vnd"/>
+                        <field name="total_profit_vnd"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view for Monthly Financial Report -->
+        <record id="view_monthly_financial_report_tree" model="ir.ui.view">
+            <field name="name">monthly.financial.report.tree</field>
+            <field name="model">monthly.financial.report</field>
+            <field name="arch" type="xml">
+                <tree string="Báo cáo tài chính hàng tháng">
+                    <field name="month"/>
+                    <field name="year"/>
+                    <field name="total_income_usd"/>
+                    <field name="total_cost_usd"/>
+                    <field name="total_profit_usd"/>
+                    <field name="total_income_vnd"/>
+                    <field name="total_cost_vnd"/>
+                    <field name="total_profit_vnd"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action for Monthly Financial Report -->
+        <record id="action_monthly_financial_report" model="ir.actions.act_window">
+            <field name="name">Báo cáo tài chính hàng tháng</field>
+            <field name="res_model">monthly.financial.report</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+</odoo>

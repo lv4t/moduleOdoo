@@ -1,0 +1,41 @@
+<odoo>
+        <!-- Form view for Attendance -->
+        <record id="view_attendance_form" model="ir.ui.view">
+            <field name="name">export.attendance.form</field>
+            <field name="model">export.attendance</field>
+            <field name="arch" type="xml">
+                <form string="Attendance">
+                    <sheet>
+                        <group>
+                            <field name="employee_id"/>
+                            <field name="check_in"/>
+                            <field name="check_out"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view for Attendance -->
+        <record id="view_attendance_tree" model="ir.ui.view">
+            <field name="name">export.attendance.tree</field>
+            <field name="model">export.attendance</field>
+            <field name="arch" type="xml">
+                <tree string="Attendance">
+                    <field name="employee_id"/>
+                    <field name="check_in"/>
+                    <field name="check_out"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action for Attendance -->
+        <record id="action_attendance" model="ir.actions.act_window">
+            <field name="name">Attendance</field>
+            <field name="res_model">export.attendance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+</odoo>

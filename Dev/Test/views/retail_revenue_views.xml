@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_retail_revenue_tree" model="ir.ui.view">
+        <field name="name">retail.revenue.tree</field>
+        <field name="model">my_module.retail_revenue</field>
+        <field name="arch" type="xml">
+            <tree string="Retail Revenue">
+                <field name="month"/>
+                <field name="revenue"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_retail_revenue_form" model="ir.ui.view">
+        <field name="name">retail.revenue.form</field>
+        <field name="model">my_module.retail_revenue</field>
+        <field name="arch" type="xml">
+            <form string="Retail Revenue">
+                <group>
+                    <field name="month"/>
+                    <field name="revenue"/>
+                </group>
+            </form>
+        </field>
+    </record>
+     <record id="action_retail_revenue" model="ir.actions.act_window">
+        <field name="name">Retail Revenues</field>
+        <field name="res_model">my_module.retail_revenue</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

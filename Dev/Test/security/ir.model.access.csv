@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_employee,access.employee,model_my_module_employee,,1,1,1,1
+access_retail_revenue,access.retail.revenue,model_my_module_retail_revenue,,1,1,1,1
+access_export_revenue,access.export.revenue,model_my_module_export_revenue,,1,1,1,1
+access_budget,access.budget,model_my_module_budget,,1,1,1,1

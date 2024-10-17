@@ -1,0 +1,49 @@
+<!-- views/quality_views.xml -->
+<odoo>
+
+        <!-- Action -->
+        <record id="action_quality_check_tree" model="ir.actions.act_window">
+            <field name="name">Quality Checks</field>
+            <field name="res_model">agri.export.quality</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help">Manage quality checks</field>
+        </record>
+
+        <record id="action_quality_check_form" model="ir.actions.act_window">
+            <field name="name">Quality Check Form</field>
+            <field name="res_model">agri.export.quality</field>
+            <field name="view_mode">form</field>
+            <field name="help">Manage quality check details</field>
+        </record>
+
+        <!-- Views -->
+        <record id="view_quality_check_tree" model="ir.ui.view">
+            <field name="name">agri.export.quality.tree</field>
+            <field name="model">agri.export.quality</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="check_date"/>
+                    <field name="result"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_quality_check_form" model="ir.ui.view">
+            <field name="name">agri.export.quality.form</field>
+            <field name="model">agri.export.quality</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="product_id"/>
+                            <field name="check_date"/>
+                            <field name="result"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+</odoo>

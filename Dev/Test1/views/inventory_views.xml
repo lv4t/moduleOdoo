@@ -1,0 +1,41 @@
+<!-- views/models.xml -->
+<odoo>
+
+
+        <!-- Inventory Management -->
+        <record model="ir.ui.view" id="view_inventory_tree">
+            <field name="name">Inventory Tree View</field>
+            <field name="model">agri.export.inventory</field>
+            <field name="arch" type="xml">
+                <tree string="Inventory">
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="location"/>
+                    <field name="quantity"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_inventory_form">
+            <field name="name">Inventory Form View</field>
+            <field name="model">agri.export.inventory</field>
+            <field name="arch" type="xml">
+                <form string="Inventory">
+                    <group>
+                        <field name="name"/>
+                        <field name="product_id"/>
+                        <field name="location"/>
+                        <field name="quantity"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_inventory">
+            <field name="name">Inventory</field>
+            <field name="res_model">agri.export.inventory</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+</odoo>
